@@ -1,32 +1,256 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Akash RM Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akash RM | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,.4);
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2rem;
+    color:#38bdf8;
+    margin-bottom:30px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+@media(max-width:768px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:2.2rem;
+}
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Akash RM</h1>
-    <h2>Aspiring Data Science</h2>
 
-    <p>
-        I am currently pursuing B.Sc. Computer Science Artificial Intelligence and
-        interested in Data Science, Python, SQL, Machine Learning and Deep Learning.
-    </p>
+<header>
+<div class="hero">
 
-    <h3>Skills</h3>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>Data Analysis</li>
-        <li>Git & GitHub</li>
-    </ul>
+<img src="profile.jpg" alt="Akash RM">
 
-    <h3>Projects</h3>
-    <ul>
-        <li>Student Result Predictor</li>
-        <li>Employee Attrition Prediction</li>
-        <li>Smart Campus Vehicle Monitoring System</li>
-    </ul>
+<div class="hero-text">
+<h1>Akash RM</h1>
+<h2>Aspiring Data Scientist & AI Undergraduate</h2>
+
+<p>
+Passionate about Data Science, Machine Learning,
+Python, SQL and Artificial Intelligence.
+</p>
+
+<a href="resume.pdf" class="btn">Download Resume</a>
+
+<a href="https://github.com/akashtrigger" class="btn">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/akash-r-m-24-" class="btn">
+LinkedIn
+</a>
+
+</div>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">About Me</h2>
+
+<p>
+Aspiring Data Scientist and AI Undergraduate with
+hands-on experience in Machine Learning, Deep Learning,
+Data Analysis and Streamlit application development.
+Skilled in Python, SQL and data-driven problem solving.
+</p>
+
+</section>
+
+<section>
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">Python</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">Machine Learning</div>
+<div class="skill-card">Deep Learning</div>
+<div class="skill-card">TensorFlow</div>
+<div class="skill-card">Pandas</div>
+<div class="skill-card">NumPy</div>
+<div class="skill-card">Streamlit</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Student Result Prediction System</h3>
+<p>
+Developed a machine learning model to predict
+student academic performance using Python and
+Scikit-Learn.
+</p>
+</div>
+
+<div class="project">
+<h3>Employee Attrition Prediction</h3>
+<p>
+Built a Random Forest model to predict employee
+turnover with feature engineering and EDA.
+</p>
+</div>
+
+<div class="project">
+<h3>AI-Based Smart Campus Vehicle Surveillance</h3>
+<p>
+Built using YOLOv8, OpenCV and TensorFlow
+for vehicle detection, tracking and counting.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Certifications</h2>
+
+<ul>
+<li>HTML & CSS – Coursera</li>
+<li>AWS Compute, Storage and Containers</li>
+<li>Agile Project Management</li>
+</ul>
+
+</section>
+
+<section class="contact">
+<h2 class="section-title">Contact</h2>
+
+<p>Email: akashmurugesan103@gmail.com</p>
+
+<p>
+GitHub: github.com/akashtrigger
+</p>
+
+<p>
+LinkedIn: linkedin.com/in/akash-r-m-24-
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 Akash RM | Portfolio</p>
+</footer>
+
 </body>
 </html>
